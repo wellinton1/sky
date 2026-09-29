@@ -1,0 +1,24 @@
+name: Bug report
+description: Reportar um comportamento inesperado
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: O que aconteceu
+      description: Descreva o comportamento observado, com passos para reproduzir.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que era esperado
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Ambiente
+      description: SO, versao do Python/Node, navegador.
+    validations:
+      required: false
